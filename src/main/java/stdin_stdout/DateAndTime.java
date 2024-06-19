@@ -21,6 +21,8 @@ public class DateAndTime {
             String day = DateAndTime.findDay(month, date, year);
             System.out.println(day);
         }
+
+        DateAndTime.dummyPrint();
     }
 
     public static String findDay(int m, int d, int y) {
@@ -33,5 +35,9 @@ public class DateAndTime {
         System.out.println("Day of week from getDisplayName: "+day_of_week.toUpperCase());
 
         return day_of_week.toUpperCase();
+    }
+
+    public static void dummyPrint(){
+        System.out.println("Dummy method printing text");
     }
 }
