@@ -38,6 +38,6 @@ public class DateAndTime {
     }
 
     public static void dummyPrint(){
-        System.out.println("Dummy method printing text to test merge");
+        System.out.println("I am a dummy method printing text. I am used to test the merge feature.");
     }
 }
