@@ -16,7 +16,7 @@ public class DateAndTime {
         int month = Integer.parseInt(sc.next());
         int date = Integer.parseInt(sc.next());
         int year = Integer.parseInt(sc.next());
-
+        System.out.println("Collected the month, date and year from commandline.");
         if(year>1900 && year<3000){
             String day = DateAndTime.findDay(month, date, year);
             System.out.println(day);
@@ -38,6 +38,6 @@ public class DateAndTime {
     }
 
     public static void dummyPrint(){
-        System.out.println("Dummy method printing text");
+        System.out.println("Dummy method printing text to test merge");
     }
 }
