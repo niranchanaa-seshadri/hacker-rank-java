@@ -2,7 +2,7 @@ package stdin_stdout;
 
 import org.testng.annotations.Test;
 
-public class SampleTestJenkins {
+public class JenkinsSampleTest {
 
     @Test
     public void printMultiples(){
