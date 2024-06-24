@@ -16,16 +16,14 @@ public class DateAndTime {
         int month = Integer.parseInt(sc.next());
         int date = Integer.parseInt(sc.next());
         int year = Integer.parseInt(sc.next());
-        System.out.println("Collected the month, date and year from commandline.");
         if(year>1900 && year<3000){
-            String day = DateAndTime.findDay(month, date, year);
-            System.out.println(day);
+            DateAndTime.findDay(month, date, year);
         }
 
         DateAndTime.dummyPrint();
     }
 
-    public static String findDay(int m, int d, int y) {
+    public static void findDay(int m, int d, int y) {
         String day_of_week;
 
         Calendar cal = Calendar.getInstance();
@@ -33,8 +31,6 @@ public class DateAndTime {
         cal.set(y, m-1, d);
         day_of_week = cal.getDisplayName(Calendar.DAY_OF_WEEK, Calendar.LONG, Locale.US);
         System.out.println("Day of week from getDisplayName: "+day_of_week.toUpperCase());
-
-        return day_of_week.toUpperCase();
     }
 
     public static void dummyPrint(){

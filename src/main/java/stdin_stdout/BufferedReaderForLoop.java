@@ -12,13 +12,16 @@ public class BufferedReaderForLoop {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
 
         int N = Integer.parseInt(bufferedReader.readLine().trim());
+        printMultiples(N);
 
+        bufferedReader.close();
+    }
+
+    public static void printMultiples(int N){
         if(2<=N && N<=20){
             for(int i=1; i<=10; i++){
                 System.out.println(N + " x " + i + " = " +N*i);
             }
         }
-
-        bufferedReader.close();
     }
 }
